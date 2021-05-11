@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6B5877D21244D89009A97B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5877C21244D89009A97B4 /* AppDelegate.m */; };
+		D6B5878021244D89009A97B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5877F21244D89009A97B4 /* ViewController.m */; };
+		D6B5878321244D89009A97B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B5878121244D89009A97B4 /* Main.storyboard */; };
+		D6B5878521244D8B009A97B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B5878421244D8B009A97B4 /* Assets.xcassets */; };
+		D6B5878821244D8B009A97B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B5878621244D8B009A97B4 /* LaunchScreen.storyboard */; };
+		D6B5878B21244D8B009A97B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5878A21244D8B009A97B4 /* main.m */; };
+		D6B5879521244D8B009A97B4 /* _02_BasicTextureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5879421244D8B009A97B4 /* _02_BasicTextureTests.m */; };
+		D6B587A021244D8B009A97B4 /* _02_BasicTextureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5879F21244D8B009A97B4 /* _02_BasicTextureUITests.m */; };
+		D6B587AF21245C10009A97B4 /* Image.tga in Resources */ = {isa = PBXBuildFile; fileRef = D6B587AE21245C10009A97B4 /* Image.tga */; };
+		D6B587B221245C2E009A97B4 /* CCRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B587B121245C2E009A97B4 /* CCRenderer.m */; };
+		D6B587B521246258009A97B4 /* CCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B587B421246258009A97B4 /* CCImage.m */; };
+		D6B587B8212463B5009A97B4 /* CCShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = D6B587B7212463B5009A97B4 /* CCShaders.metal */; };
+		D6B587BB21270146009A97B4 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B587BA21270146009A97B4 /* MetalKit.framework */; };
+		D6F41965227DC322002700BA /* kun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F41964227DC322002700BA /* kun.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B5879121244D8B009A97B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B5877021244D89009A97B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B5877721244D89009A97B4;
+			remoteInfo = "002-BasicTexture";
+		};
+		D6B5879C21244D8B009A97B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B5877021244D89009A97B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B5877721244D89009A97B4;
+			remoteInfo = "002-BasicTexture";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6B5877821244D89009A97B4 /* 002-BasicTexture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "002-BasicTexture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B5877B21244D89009A97B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6B5877C21244D89009A97B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6B5877E21244D89009A97B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6B5877F21244D89009A97B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6B5878221244D89009A97B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6B5878421244D8B009A97B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6B5878721244D8B009A97B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6B5878921244D8B009A97B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B5878A21244D8B009A97B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6B5879021244D8B009A97B4 /* 002-BasicTextureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "002-BasicTextureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B5879421244D8B009A97B4 /* _02_BasicTextureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _02_BasicTextureTests.m; sourceTree = "<group>"; };
+		D6B5879621244D8B009A97B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B5879B21244D8B009A97B4 /* 002-BasicTextureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "002-BasicTextureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B5879F21244D8B009A97B4 /* _02_BasicTextureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _02_BasicTextureUITests.m; sourceTree = "<group>"; };
+		D6B587A121244D8B009A97B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B587AE21245C10009A97B4 /* Image.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Image.tga; sourceTree = "<group>"; };
+		D6B587B021245C2E009A97B4 /* CCRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRenderer.h; sourceTree = "<group>"; };
+		D6B587B121245C2E009A97B4 /* CCRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRenderer.m; sourceTree = "<group>"; };
+		D6B587B321246258009A97B4 /* CCImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCImage.h; sourceTree = "<group>"; };
+		D6B587B421246258009A97B4 /* CCImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCImage.m; sourceTree = "<group>"; };
+		D6B587B6212463B4009A97B4 /* CCShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCShaderTypes.h; sourceTree = "<group>"; };
+		D6B587B7212463B5009A97B4 /* CCShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CCShaders.metal; sourceTree = "<group>"; };
+		D6B587BA21270146009A97B4 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		D6F41964227DC322002700BA /* kun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kun.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B5877521244D89009A97B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B587BB21270146009A97B4 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5878D21244D8B009A97B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5879821244D8B009A97B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6B5876F21244D89009A97B4 = {
+			isa = PBXGroup;
+			children = (
+				D6B5877A21244D89009A97B4 /* 002-BasicTexture */,
+				D6B5879321244D8B009A97B4 /* 002-BasicTextureTests */,
+				D6B5879E21244D8B009A97B4 /* 002-BasicTextureUITests */,
+				D6B5877921244D89009A97B4 /* Products */,
+				D6B587B921270145009A97B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B5877921244D89009A97B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5877821244D89009A97B4 /* 002-BasicTexture.app */,
+				D6B5879021244D8B009A97B4 /* 002-BasicTextureTests.xctest */,
+				D6B5879B21244D8B009A97B4 /* 002-BasicTextureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B5877A21244D89009A97B4 /* 002-BasicTexture */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5877B21244D89009A97B4 /* AppDelegate.h */,
+				D6B5877C21244D89009A97B4 /* AppDelegate.m */,
+				D6B5877E21244D89009A97B4 /* ViewController.h */,
+				D6B5877F21244D89009A97B4 /* ViewController.m */,
+				D6B587AD21245BEF009A97B4 /* Renderer */,
+				D6B5878121244D89009A97B4 /* Main.storyboard */,
+				D6B5878421244D8B009A97B4 /* Assets.xcassets */,
+				D6B5878621244D8B009A97B4 /* LaunchScreen.storyboard */,
+				D6B5878921244D8B009A97B4 /* Info.plist */,
+				D6B5878A21244D8B009A97B4 /* main.m */,
+			);
+			path = "002-BasicTexture";
+			sourceTree = "<group>";
+		};
+		D6B5879321244D8B009A97B4 /* 002-BasicTextureTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5879421244D8B009A97B4 /* _02_BasicTextureTests.m */,
+				D6B5879621244D8B009A97B4 /* Info.plist */,
+			);
+			path = "002-BasicTextureTests";
+			sourceTree = "<group>";
+		};
+		D6B5879E21244D8B009A97B4 /* 002-BasicTextureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5879F21244D8B009A97B4 /* _02_BasicTextureUITests.m */,
+				D6B587A121244D8B009A97B4 /* Info.plist */,
+			);
+			path = "002-BasicTextureUITests";
+			sourceTree = "<group>";
+		};
+		D6B587AD21245BEF009A97B4 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				D6F41964227DC322002700BA /* kun.jpg */,
+				D6B587AE21245C10009A97B4 /* Image.tga */,
+				D6B587B021245C2E009A97B4 /* CCRenderer.h */,
+				D6B587B121245C2E009A97B4 /* CCRenderer.m */,
+				D6B587B321246258009A97B4 /* CCImage.h */,
+				D6B587B421246258009A97B4 /* CCImage.m */,
+				D6B587B6212463B4009A97B4 /* CCShaderTypes.h */,
+				D6B587B7212463B5009A97B4 /* CCShaders.metal */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		D6B587B921270145009A97B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B587BA21270146009A97B4 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B5877721244D89009A97B4 /* 002-BasicTexture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B587A421244D8B009A97B4 /* Build configuration list for PBXNativeTarget "002-BasicTexture" */;
+			buildPhases = (
+				D6B5877421244D89009A97B4 /* Sources */,
+				D6B5877521244D89009A97B4 /* Frameworks */,
+				D6B5877621244D89009A97B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "002-BasicTexture";
+			productName = "002-BasicTexture";
+			productReference = D6B5877821244D89009A97B4 /* 002-BasicTexture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6B5878F21244D8B009A97B4 /* 002-BasicTextureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B587A721244D8B009A97B4 /* Build configuration list for PBXNativeTarget "002-BasicTextureTests" */;
+			buildPhases = (
+				D6B5878C21244D8B009A97B4 /* Sources */,
+				D6B5878D21244D8B009A97B4 /* Frameworks */,
+				D6B5878E21244D8B009A97B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B5879221244D8B009A97B4 /* PBXTargetDependency */,
+			);
+			name = "002-BasicTextureTests";
+			productName = "002-BasicTextureTests";
+			productReference = D6B5879021244D8B009A97B4 /* 002-BasicTextureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6B5879A21244D8B009A97B4 /* 002-BasicTextureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B587AA21244D8B009A97B4 /* Build configuration list for PBXNativeTarget "002-BasicTextureUITests" */;
+			buildPhases = (
+				D6B5879721244D8B009A97B4 /* Sources */,
+				D6B5879821244D8B009A97B4 /* Frameworks */,
+				D6B5879921244D8B009A97B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B5879D21244D8B009A97B4 /* PBXTargetDependency */,
+			);
+			name = "002-BasicTextureUITests";
+			productName = "002-BasicTextureUITests";
+			productReference = D6B5879B21244D8B009A97B4 /* 002-BasicTextureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B5877021244D89009A97B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "CC老师";
+				TargetAttributes = {
+					D6B5877721244D89009A97B4 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					D6B5878F21244D8B009A97B4 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D6B5877721244D89009A97B4;
+					};
+					D6B5879A21244D8B009A97B4 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D6B5877721244D89009A97B4;
+					};
+				};
+			};
+			buildConfigurationList = D6B5877321244D89009A97B4 /* Build configuration list for PBXProject "002-BasicTexture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6B5876F21244D89009A97B4;
+			productRefGroup = D6B5877921244D89009A97B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B5877721244D89009A97B4 /* 002-BasicTexture */,
+				D6B5878F21244D8B009A97B4 /* 002-BasicTextureTests */,
+				D6B5879A21244D8B009A97B4 /* 002-BasicTextureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B5877621244D89009A97B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5878821244D8B009A97B4 /* LaunchScreen.storyboard in Resources */,
+				D6F41965227DC322002700BA /* kun.jpg in Resources */,
+				D6B5878521244D8B009A97B4 /* Assets.xcassets in Resources */,
+				D6B587AF21245C10009A97B4 /* Image.tga in Resources */,
+				D6B5878321244D89009A97B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5878E21244D8B009A97B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5879921244D8B009A97B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B5877421244D89009A97B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B587B521246258009A97B4 /* CCImage.m in Sources */,
+				D6B587B221245C2E009A97B4 /* CCRenderer.m in Sources */,
+				D6B587B8212463B5009A97B4 /* CCShaders.metal in Sources */,
+				D6B5878021244D89009A97B4 /* ViewController.m in Sources */,
+				D6B5878B21244D8B009A97B4 /* main.m in Sources */,
+				D6B5877D21244D89009A97B4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5878C21244D8B009A97B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5879521244D8B009A97B4 /* _02_BasicTextureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5879721244D8B009A97B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B587A021244D8B009A97B4 /* _02_BasicTextureUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B5879221244D8B009A97B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B5877721244D89009A97B4 /* 002-BasicTexture */;
+			targetProxy = D6B5879121244D8B009A97B4 /* PBXContainerItemProxy */;
+		};
+		D6B5879D21244D8B009A97B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B5877721244D89009A97B4 /* 002-BasicTexture */;
+			targetProxy = D6B5879C21244D8B009A97B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B5878121244D89009A97B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B5878221244D89009A97B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6B5878621244D8B009A97B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B5878721244D8B009A97B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B587A221244D8B009A97B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6B587A321244D8B009A97B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6B587A521244D8B009A97B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N2KK62WZZ;
+				INFOPLIST_FILE = "002-BasicTexture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CC.HelloMetalImage1.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6B587A621244D8B009A97B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N2KK62WZZ;
+				INFOPLIST_FILE = "002-BasicTexture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CC.HelloMetalImage1.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6B587A821244D8B009A97B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "002-BasicTextureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CC.-02-BasicTextureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/002-BasicTexture.app/002-BasicTexture";
+			};
+			name = Debug;
+		};
+		D6B587A921244D8B009A97B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "002-BasicTextureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CC.-02-BasicTextureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/002-BasicTexture.app/002-BasicTexture";
+			};
+			name = Release;
+		};
+		D6B587AB21244D8B009A97B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "002-BasicTextureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CC.-02-BasicTextureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "002-BasicTexture";
+			};
+			name = Debug;
+		};
+		D6B587AC21244D8B009A97B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "002-BasicTextureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CC.-02-BasicTextureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "002-BasicTexture";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B5877321244D89009A97B4 /* Build configuration list for PBXProject "002-BasicTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B587A221244D8B009A97B4 /* Debug */,
+				D6B587A321244D8B009A97B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B587A421244D8B009A97B4 /* Build configuration list for PBXNativeTarget "002-BasicTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B587A521244D8B009A97B4 /* Debug */,
+				D6B587A621244D8B009A97B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B587A721244D8B009A97B4 /* Build configuration list for PBXNativeTarget "002-BasicTextureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B587A821244D8B009A97B4 /* Debug */,
+				D6B587A921244D8B009A97B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B587AA21244D8B009A97B4 /* Build configuration list for PBXNativeTarget "002-BasicTextureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B587AB21244D8B009A97B4 /* Debug */,
+				D6B587AC21244D8B009A97B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6B5877021244D89009A97B4 /* Project object */;
+}
